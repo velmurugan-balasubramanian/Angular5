@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WelcomeComponent implements OnInit {
 
+  value: Date;
+
+  update(value: Date) { 
+    console.log(value);
+    this.value = value; }
   constructor() { }
 
   ngOnInit() {
